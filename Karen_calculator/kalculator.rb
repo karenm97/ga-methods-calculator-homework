@@ -14,9 +14,13 @@ def divide(a, b)
   a.to_i / b.to_i
 end
 
+def exponential(a, b)
+  a.to_i ** b.to_i
+end
+
 prompt = ">"
 puts "Welcome to Kalculator. Here are your operation choices:"
-puts "Add","Subtract","Multiple","Divide"
+puts "Add","Subtract","Multiply","Divide","Exponential"
 puts "What do you want like to do?"
 print prompt
 operation = gets.chomp
@@ -36,4 +40,9 @@ when "Multiply"
 	puts multiply(a, b)
 when "Divide"
 	puts divide(a, b)
+when "Exponential"
+	puts exponential(a, b)
 end
+
+puts "My work here is done."
+exit
